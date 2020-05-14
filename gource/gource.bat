@@ -1,1 +1,1 @@
-gource -f -1920x1080 --bloom-multiplier 1.0 --bloom-intensity 1.5 --default-user-image C:\Users\mattn\Desktop\DiscordBot\gource\Pictures\IMG-100.png
+gource -f -1920x1080 --bloom-multiplier 1.0 --bloom-intensity 1.5 --default-user-image C:\Users\mattn\Desktop\DiscordBot\gource\Pictures\IMG-100.png -r 60 --seconds-per-day 100
