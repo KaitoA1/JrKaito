@@ -1,4 +1,5 @@
 const { botPREFIX } = require('../../botConfig.json');
+const { notOwner } = require('../../utils/messages/errors.js');
 
 module.exports = async (bot, message) => {
     
@@ -10,7 +11,7 @@ module.exports = async (bot, message) => {
     if(!message.content.startsWith(botPREFIX)) return;
     let commandfile = bot.commands.get(cmd) || bot.commands.get(bot.aliases.get(cmd))
     
-    if (commandfile.config.ownerOnly && !owners.includes(message.author.id)) return message.channel.send("Sorry, you must be the bot owner to use this command")
+    if (commandfile.config.ownerOnly && !owners.includes(message.author.id)) return notOwner(message, 'message.author.id');
     let result = missingPerms(message.member, commandfile.config.userPerms)
 
     if (commandfile.config.userPerms && !message.member.permissions.has(commandfile.config.userPerms)) return message.channel.send(`Sorry, you must have ${result} perms to run this command`)
