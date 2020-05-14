@@ -1,0 +1,1 @@
+const { botPrefix } = require(`../../../botConfig.json`);
