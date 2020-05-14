@@ -12,12 +12,12 @@ module.exports = async (bot, message) => {
     let commandfile = bot.commands.get(cmd) || bot.commands.get(bot.aliases.get(cmd))
     
     if (commandfile.config.ownerOnly && !owners.includes(message.author.id)) return notOwner(message, 'message.author.id');
-    let result = missingPerms(message.member, commandfile.config.userPerms)
+//    let result = missingPerms(message.member, commandfile.config.userPerms)
 
-    if (commandfile.config.userPerms && !message.member.permissions.has(commandfile.config.userPerms)) return message.channel.send(`Sorry, you must have ${result} perms to run this command`)
-    result = missingPerms(message.guild.me, commandfile.config.clientPerms)
-    if (commandfile.requirements.clientPerms && !message.guild.me.permissions.has(commandfile.config.clientPerms)) return message.channel.send(`Sorry, i must have ${result} perms to run this command`)
-    commandfile.run(client, message, args)
+//    if (commandfile.config.userPerms && !message.member.permissions.has(commandfile.config.userPerms)) return message.channel.send(`Sorry, you must have ${result} perms to run this command`)
+//    result = missingPerms(message.guild.me, commandfile.config.clientPerms)
+//    if (commandfile.requirements.clientPerms && !message.guild.me.permissions.has(commandfile.config.clientPerms)) return message.channel.send(`Sorry, i must have ${result} perms to run this command`)
+    commandfile.run(bot, message, args)
 }
 
 const missingPerms = (member, perms) => {
