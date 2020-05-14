@@ -7,8 +7,8 @@ module.exports = {
         accessableby: "N/A",
         aliases: ["info"],
         ownerOnly: false,
-        userPerms: [N/A], 
-        clientPerms: [N/A],
+        userPerms: [], 
+        clientPerms: [],
     },
     run: async (bot, message, args) => { 
          }
