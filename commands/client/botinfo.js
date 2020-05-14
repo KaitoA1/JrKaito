@@ -16,7 +16,7 @@ module.exports = {
         category: "client",
         accessableby: "N/A",
         aliases: ["info"],
-        ownerOnly: true,
+        ownerOnly: false,
         userPerms: [], 
         clientPerms: [],
     },
