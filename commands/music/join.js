@@ -13,7 +13,7 @@ module.exports = {
     run: async (bot, message, args) => {
         const { channel } = message.member.voice;
         if (channel) {
-            const player = bot.music.players.spawn({
+            bot.music.players.spawn({
                 guild: message.guild,
                 voiceChannel: channel,
                 textChannel: message.channel,
