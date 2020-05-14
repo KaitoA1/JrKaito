@@ -1,15 +1,9 @@
+// Inports of nodes or files
 require('dotenv').config();
-
-const { Client } = require('discord.js');
+const { Client, Collection } = require('discord.js');
 const bot = new Client();
 
-
-
-
-bot.once('ready', () => {
-    console.log(`${bot.user.username} is now ONLINE!`);
-});
-
-
+['commands', 'aliases'].forEach(c => bot[c] = new Collection());
+['commandHandler', 'eventHandler'].forEach(h => require(`./utils/handlers/${h}`)(bot));
 
 bot.login(process.env.botTOKEN);
