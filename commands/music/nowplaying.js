@@ -1,17 +1,15 @@
-const { Utils } = require("erela.js")
-const { MessageEmbed } = require("discord.js")
-
-module.exports = { 
-    name: "nowplaying",
-    description: "The bot will display what is playing and the timeline.",
-    usage: "<input>",
-    category: "music",
-    accessableby: "Members",
-    aliases: ["np", "now", "song"],
-    ownerOnly: false,
-    userPerms: [], 
-    clientPerms: [],
-
+module.exports = {
+    config: {
+        name: "nowplaying",
+        description: "The bot will display what is playing and the timeline.",
+        usage: "N/A",
+        category: "music",
+        accessableby: "N/A",
+        aliases: ["np", "now", "song"],
+        ownerOnly: false,
+        userPerms: [], 
+        clientPerms: [],
+    },
     run: async (bot, message, args) => {
         const player = bot.music.players.get(message.guild.id);
         if (!player || !player.queue[0]) return message.channel.send("No song/s currently playing within this guild.");
