@@ -1,0 +1,24 @@
+{
+  "name": "jrkaito",
+  "version": "1.0.0",
+  "description": "A discord bot",
+  "main": "./src/index.js",
+  "dependencies": {
+    "discord.js": "^12.2.0",
+    "dotenv": "^8.2.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/KaitoAI/JrKaito.git"
+  },
+  "author": "Matthew Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/KaitoAI/JrKaito/issues"
+  },
+  "homepage": "https://github.com/KaitoAI/JrKaito#readme"
+}
