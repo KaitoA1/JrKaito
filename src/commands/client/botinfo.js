@@ -1,12 +1,12 @@
 module.exports = {
     config: {
-        name: "N/A",
-        description: "N/A",
+        name: "botinfo",
+        description: "Information about the bot",
         usage: "N/A",
-        category: "N/A",
+        category: "client",
         accessableby: "N/A",
-        aliases: ["N/A"],
-        ownerOnly: N/A,
+        aliases: ["info"],
+        ownerOnly: false,
         userPerms: [N/A], 
         clientPerms: [N/A],
     },
