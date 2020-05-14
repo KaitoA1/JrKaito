@@ -1,5 +1,11 @@
 {
     "OWNERID": "450785025861091329",
 
-    "botPREFIX": "."
+    "botPREFIX": ".",
+
+    "nodes": [{
+        "host": "localhost",
+        "port": "2333",
+        "password": "HkN95rxf+"
+    }]
 }
