@@ -1,4 +1,4 @@
-const { botPREFIX } = require(`../../../botConfig.json`);
+const { botPREFIX } = require(`../../botConfig.json`);
 
 module.exports = async (bot, message) => {
 
