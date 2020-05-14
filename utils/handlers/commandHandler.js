@@ -11,7 +11,7 @@ module.exports = (bot) => {
                 bot.commands.set(pull.name, pull);
             }
     
-            if (pull.aliases && Array.isArray(pull.aliases)) pull.aliases.forEach(alias => bot.aliases.set(alias, pull.name));
+            if (pull.config.aliases && Array.isArray(pull.config.aliases)) pull.config.aliases.forEach(alias => bot.aliases.set(alias, pull.config.name));
         }
     });
 }
