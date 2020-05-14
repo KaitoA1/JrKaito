@@ -9,7 +9,6 @@ let cpuStat = require("cpu-stat")
 const ms = require("ms")
 
 module.exports = {
-    config: {
         name: "botinfo",
         description: "Information about the bot",
         usage: "N/A",
@@ -19,7 +18,6 @@ module.exports = {
         ownerOnly: false,
         userPerms: [], 
         clientPerms: [],
-    },
     run: async (bot, message, args) => {
         cpuStat.usagePercent(function(err, percent, seconds) {
             if (err) { return console.log(err); }
