@@ -64,6 +64,6 @@ module.exports = async (bot, member) => {
 	// Use helpful Attachment class structure to process the file for you
 	const attachment = new MessageAttachment(canvas.toBuffer(), 'welcome-image.png');
 
-
+	
 	channel.send(`Welcome to the server, ${member}!`, attachment);
 }

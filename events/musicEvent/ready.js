@@ -22,5 +22,4 @@ module.exports = async (bot) => {
         player.textChannel.send("Queue has ended.");
         bot.music.players.destroy(player.guild.id);
     });
-
 }
