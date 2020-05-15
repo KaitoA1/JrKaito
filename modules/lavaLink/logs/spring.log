@@ -299,3 +299,5 @@ java.lang.UnsupportedClassVersionError: lavalink/server/info/AppInfo has been co
 2020-05-14 18:53:22.617  INFO 5612 --- [XNIO-1 I/O-11] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
 2020-05-14 18:53:24.732  INFO 5612 --- [XNIO-1 task-20] l.server.io.HandshakeInterceptorImpl     : Incoming connection from /127.0.0.1:51427
 2020-05-14 18:53:24.742  INFO 5612 --- [XNIO-1 task-20] lavalink.server.io.SocketServer          : Connection successfully established from /127.0.0.1:51427
+2020-05-14 18:54:16.135  INFO 5612 --- [XNIO-1 I/O-7] lavalink.server.io.SocketServer          : Connection closed from /127.0.0.1:51427 -- CloseStatus[code=1006, reason=]
+2020-05-14 18:54:16.136  INFO 5612 --- [XNIO-1 I/O-7] lavalink.server.io.SocketContext         : Shutting down 0 playing players.
