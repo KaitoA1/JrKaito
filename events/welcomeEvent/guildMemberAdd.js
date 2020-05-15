@@ -67,6 +67,3 @@ module.exports = async (bot, member) => {
 
 	channel.send(`Welcome to the server, ${member}!`, attachment);
 }
-
-
-
