@@ -8,7 +8,6 @@ const bot = new Client();
 
 bot.login(process.env.botTOKEN);
 
-
 // Test
 bot.on('message', message => {
 	if (message.content === '!join') {

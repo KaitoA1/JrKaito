@@ -28,7 +28,7 @@ module.exports = async (bot, member) => {
     const ctx = canvas.getContext('2d');
     
 	// Since the image takes time to load, you should await it
-	const background = await Canvas.loadImage('./wallpaper.jpg');
+	const background = await Canvas.loadImage('./events/welcomeEvent/images/wallpaper.jpg');
 	// This uses the canvas dimensions to stretch the image onto the entire canvas
     ctx.drawImage(background, 0, 0, canvas.width, canvas.height);
     
