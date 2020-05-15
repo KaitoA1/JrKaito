@@ -4,7 +4,7 @@ const Canvas = require('canvas');
 module.exports = async (bot, member) => {   
     const applyText = (canvas, text) => {
         const ctx = canvas.getContext('2d');
-    
+
         // Declare a base size of the font
         let fontSize = 70;
     
@@ -17,7 +17,6 @@ module.exports = async (bot, member) => {
         // Return the result to use in the actual canvas
         return ctx.font;
     };
-   
    
     const channel = member.guild.channels.cache.find(ch => ch.name === 'welcome');
     if (!channel) return;
