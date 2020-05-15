@@ -7,3 +7,11 @@ const bot = new Client();
 ['commandHandler', 'eventHandler'].forEach(h => require(`./utils/handlers/${h}`)(bot));
 
 bot.login(process.env.botTOKEN);
+
+
+// Test
+bot.on('message', message => {
+	if (message.content === '!join') {
+		bot.emit('guildMemberAdd', message.member);
+	}
+});

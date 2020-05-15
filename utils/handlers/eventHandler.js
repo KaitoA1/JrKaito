@@ -11,6 +11,6 @@ module.exports = (bot) => {
         }
     }
 
-    ['client', 'guild', 'musicEvent'].forEach(x => load(x));
+    ['client', 'guild', 'musicEvent', 'welcomeEvent'].forEach(x => load(x));
 
 }

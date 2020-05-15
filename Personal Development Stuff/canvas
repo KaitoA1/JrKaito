@@ -1,1 +1,2 @@
-npm install canvas --build-from-source && npm install
+npm install canvas --build-from-source  
+npm install
